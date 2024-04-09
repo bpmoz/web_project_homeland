@@ -1,0 +1,36 @@
+.gallery {
+  padding-top: 92px;
+  max-width: 1184px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.gallery__image {
+  max-width: 285px;
+  width: 352px;
+}
+
+@media screen and (max-width: 1100px) {
+  .gallery {
+    max-width: 720px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__image {
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery {
+    max-width: 320px;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__image {
+    max-width: 288px;
+    margin: auto;
+  }
+}

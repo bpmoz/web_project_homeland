@@ -1,0 +1,59 @@
+.intro {
+  max-width: 1017px;
+  color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+.intro__title {
+  font-family: "Inter";
+  font-style: bold;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.intro__quote {
+  position: relative;
+  max-width: 720px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142%;
+  margin: 0;
+}
+
+.intro__name {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+
+.intro__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 720px;
+  margin: 0;
+  padding-top: 42px;
+}
+
+@media screen and (max-width: 1230px) {
+  .intro {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .intro {
+    max-width: 288px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+  }
+}

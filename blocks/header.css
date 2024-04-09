@@ -1,0 +1,15 @@
+.header {
+  color: #ffffff;
+  padding-top: 34px;
+}
+
+.header__logo {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .header__logo {
+    width: 200px;
+  }
+}
