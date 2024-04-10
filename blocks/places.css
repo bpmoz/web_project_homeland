@@ -82,15 +82,23 @@
   background: #0278fe;
   border-radius: 4px;
   grid-area: button;
+  padding: 13px 18px;
+  border-radius: 4px;
+  margin: 0;
+  max-width: 355px;
+  text-align: center;
+  align-self: self-start;
 }
 
-.place__button-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+.place__button:hover {
+  background-color: #0063d2;
+}
 
+.place__button-paragraph {
+  font-size: 18px;
+  line-height: 21.78px;
+  font-weight: 600;
+  text-decoration: none;
   color: #ffffff;
 }
 
