@@ -83,7 +83,6 @@
   border-radius: 4px;
   grid-area: button;
   padding: 13px 18px;
-  border-radius: 4px;
   margin: 0;
   max-width: 355px;
   text-align: center;
@@ -114,7 +113,6 @@
 
 .place__title-barea {
   font-family: "Inter";
-  font-style: bold;
   font-weight: 900;
   font-size: 72px;
   line-height: 106%;
