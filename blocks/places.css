@@ -6,6 +6,7 @@
 }
 
 .place {
+  max-width: 987px;
   display: grid;
   grid-template-areas:
     "title subtitle"
@@ -13,12 +14,16 @@
     "button paragraph";
   padding-top: 80px;
   gap: 40px;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 460px auto;
+  grid-template-columns: 1fr 460px;
 }
 
 .place:first-of-type {
   padding-top: 0;
+}
+
+.place:last-of-type {
+  padding-bottom: 92px;
 }
 .place__title {
   font-family: "Inter";
@@ -138,6 +143,39 @@
   grid-area: button;
 }
 
+.place_muramvya {
+  max-width: 987px;
+  display: grid;
+  grid-template-areas:
+    "title subtitle"
+    "image paragraph"
+    "button paragraph";
+  padding-top: 80px;
+  gap: 40px;
+  grid-template-rows: auto 460px auto;
+  grid-template-columns: 1fr 460px;
+}
+
+.place__title-muramvya {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 106%;
+  max-width: 460px;
+  grid-area: title;
+  margin: 0;
+}
+
+.place__subtitle-muramvya {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 465px;
+  padding-top: 100px;
+  grid-area: subtitle;
+}
+
 .place__paragraphs-muramvya {
   font-family: Inter;
   font-size: 18px;
@@ -149,10 +187,10 @@
   grid-column-end: 3;
 }
 
-. @media screen and (max-width: 1018px) {
+@media screen and (max-width: 1018px) {
   .places {
-    margin: auto;
     max-width: 720px;
+    margin: auto;
   }
 
   .place {
@@ -160,6 +198,7 @@
     gap: 28px;
     grid-template-rows: auto 340px auto;
     grid-template-columns: 1fr 340px;
+    margin: auto;
   }
 
   .place__paragraphs {
@@ -170,6 +209,22 @@
     max-width: 720px;
   }
 
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    margin: auto;
+  }
+
+  .place__subtitle {
+    padding: 0;
+    max-width: 294px;
+    margin: 0 auto;
+  }
+  .place__text {
+    font-size: 18px;
+    width: 325px;
+  }
+
   .place__image {
     max-width: 340px;
     gap: 48px;
@@ -178,6 +233,80 @@
   }
 
   .place__barea {
-    max-width: 720px;
+    max-width: 320px;
+    gap: 28px;
+    grid-template-rows: auto 340px auto;
+    grid-template-columns: 1fr 340px;
+  }
+
+  .place__title-barea {
+    font-size: 42px;
+    grid-column: 1/2;
+    margin: auto;
+  }
+
+  .place__subtitle-barea {
+    padding: 0;
+    margin: auto;
+  }
+
+  .place__image-barea {
+    max-width: 352px;
+  }
+
+  .place__paragraphs-barea {
+    max-width: 325px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    font-size: 16px;
+  }
+
+  .place__title-muramvya {
+    margin: auto;
+    font-size: 42px;
+  }
+
+  .place__paragraphs-muramvya {
+    max-width: 325px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    font-size: 16px;
+  }
+
+  .place_muramvya {
+    max-width: 987px;
+    display: grid;
+    grid-template-areas:
+      "title subtitle"
+      "image paragraph"
+      "button paragraph";
+    padding-top: 80px;
+    gap: 40px;
+    grid-template-rows: auto 460px auto;
+    grid-template-columns: 1fr 340px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .place {
+    display: block;
+  }
+
+  .place__barea {
+    display: block;
+  }
+
+  .place_muramvya {
+    display: block;
+  }
+
+  .place__title-muramvya {
+    display: block;
+  }
+
+  .place__paragraphs-muramvya {
+    display: block;
   }
 }
