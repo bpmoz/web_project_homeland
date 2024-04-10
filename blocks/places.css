@@ -101,7 +101,7 @@
   color: #ffffff;
 }
 
-.place__barea {
+.place-barea {
   display: grid;
   grid-template-areas:
     "title subtitle"
@@ -149,7 +149,7 @@
   grid-area: button;
 }
 
-.place_muramvya {
+.place-muramvya {
   max-width: 987px;
   display: grid;
   grid-template-areas:
@@ -238,7 +238,7 @@
     grid-column-end: -3;
   }
 
-  .place__barea {
+  .place-barea {
     max-width: 320px;
     gap: 28px;
     grid-template-rows: auto 340px auto;
@@ -281,7 +281,7 @@
     font-size: 16px;
   }
 
-  .place_muramvya {
+  .place-muramvya {
     max-width: 987px;
     display: grid;
     grid-template-areas:
@@ -300,11 +300,11 @@
     display: block;
   }
 
-  .place__barea {
+  .place-barea {
     display: block;
   }
 
-  .place_muramvya {
+  .place-muramvya {
     display: block;
   }
 
