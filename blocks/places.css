@@ -145,10 +145,43 @@
     grid-column-start: 2;
     grid-column-end: -3;
   }
+}
 
-  @media screen and (max-width: 400px) {
-    .place {
-      display: block;
-    }
+@media screen and (max-width: 400px) {
+  .place {
+    display: block;
+    margin: 0;
+    max-width: 320px;
+  }
+  .place__image {
+    max-width: 320px;
+    padding-top: 30px;
+  }
+
+  .place__title {
+    max-width: 288px;
+    margin: 0;
+    font-size: 32px;
+    padding-left: 16px;
+    padding-bottom: 30px;
+  }
+  .place__paragraphs {
+    max-width: 288px;
+    margin: auto;
+  }
+  .place__text {
+    max-width: 288px;
+  }
+  .place__button {
+    background-color: #0278fe;
+    width: 250px;
+    max-width: 288px;
+    margin: auto;
+  }
+
+  .place__button-paragraph {
+    max-width: 245px;
+    font-size: 14px;
+    padding: 0px;
   }
 }
